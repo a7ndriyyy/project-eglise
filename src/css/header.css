@@ -14,7 +14,10 @@
 }
 .logo:hover,
 .logo:focus {
-  color: rgb(1, 1, 1);
+  color: #e09b2d;
+}
+.svg {
+  margin-right: 5px;
 }
 .border {
   color: #404bbf;
