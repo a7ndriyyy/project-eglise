@@ -5,7 +5,7 @@
   "homepage": "https://a7ndriyyy.github.io/project-eglise",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /project-eglise/"
   },
   "repository": {
     "type": "git",
