@@ -1,0 +1,25 @@
+.contact-ul {
+  margin-top: 40px;
+}
+.div-contact {
+  margin-bottom: 150px;
+}
+.li-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: bisque;
+  width: 250px;
+  height: 200px;
+  padding: 20px 20px 20px 20px;
+}
+.title-contacts {
+  margin-top: 70px;
+  font-size: 40px;
+}
+.contact-li {
+  font-size: 22px;
+}
+.margin-contact {
+  margin-bottom: 20px;
+}
