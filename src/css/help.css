@@ -1,7 +1,7 @@
 .div-bg {
   background-color: antiquewhite;
   /* display: flex; */
-  width: 650px;
+  width: 800px;
   box-shadow: 20px 20px 20px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-radius: 20px;
@@ -18,12 +18,46 @@
   display: flex;
 }
 .container-help-card {
-  width: 500px;
+  width: 700px;
   padding: 20px 20px 20px 40px;
 }
 .svg-div {
   margin-bottom: 40px;
+  margin-left: auto;
 }
 .title-church {
   margin-top: 10px;
+}
+.list-card {
+  row-gap: 10px;
+}
+.text-title-help {
+  margin-top: auto;
+  padding-bottom: 8px;
+}
+.under-text-help {
+  justify-content: center;
+  margin-left: 200px;
+}
+.help-contacts-div {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.help-contacts-text {
+  font-size: 20px;
+}
+
+.help-contacts-link {
+  color: #e09b2d;
+}
+
+.help-contacts-link:hover,
+.help-contacts-link:focus {
+  color: rgb(215, 182, 84);
+}
+
+/* FOOTER */
+.footer {
+  padding: 100px 0;
+  background-color: gray;
 }
