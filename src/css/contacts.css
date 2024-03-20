@@ -1,5 +1,6 @@
 .contact-ul {
   margin-top: 40px;
+  display: flex;
 }
 .div-contact {
   margin-bottom: 150px;
@@ -9,9 +10,9 @@
   flex-direction: column;
   gap: 8px;
   background-color: bisque;
-  width: 250px;
-  height: 200px;
+  width: 270px;
   padding: 20px 20px 20px 20px;
+  margin-right: auto;
 }
 .title-contacts {
   margin-top: 70px;
@@ -19,6 +20,11 @@
 }
 .contact-li {
   font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.contact-nav {
 }
 .margin-contact {
   margin-bottom: 20px;
