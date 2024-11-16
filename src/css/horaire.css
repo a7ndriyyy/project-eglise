@@ -1,0 +1,7 @@
+.backimages {
+  background-image: url('../images/Church.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
