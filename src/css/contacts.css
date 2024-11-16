@@ -1,6 +1,9 @@
 .contact-ul {
   margin-top: 40px;
   display: flex;
+  gap: 20px; /* Add gap between cards */
+  justify-content: center; /* Center the cards horizontally */
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
 }
 .div-contact {
   margin-bottom: 150px;
@@ -11,20 +14,37 @@
   gap: 8px;
   background-color: bisque;
   width: 270px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   margin-right: auto;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
+
+.li-contact:hover {
+  transform: scale(1.05); /* Slightly increase the card size on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+}
+
 .title-contacts {
   margin-top: 70px;
   font-size: 40px;
+  text-align: center; /* Center the title */
+  color: #333; /* Ensure good contrast and readability */
 }
 .contact-li {
   font-size: 22px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  text-align: center; /* Center the text */
+  color: #333;
 }
 .contact-nav {
+  color: #0056b3; /* Make links blue */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.contact-nav:hover {
+  color: #003366; /* Darker blue on hover */
 }
 .margin-contact {
   margin-bottom: 20px;

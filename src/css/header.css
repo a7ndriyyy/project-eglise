@@ -92,3 +92,33 @@
 .ul-header {
   display: flex;
 }
+
+#language-select {
+  position: absolute;
+  top: 20px; /* Відстань від верхнього краю */
+  right: 20px; /* Відстань від правого краю */
+  padding: 5px;
+  font-size: 16px;
+  background-color: #f0f0f0; /* Світлий фон */
+  border: 1px solid #ccc; /* Легкий бордер */
+  border-radius: 5px; /* Округлені кути */
+}
+
+label[for='language-select'] {
+  position: absolute;
+  top: 20px;
+  right: 150px; /* Трошки лівіше, ніж сам select */
+  font-size: 16px;
+  color: #333; /* Колір тексту */
+  font-family: 'Arial', sans-serif; /* Шрифт */
+  letter-spacing: 1px; /* Відстань між літерами */
+  text-transform: uppercase; /* Великі літери */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Легкий фон, щоб текст був читаємим на будь-якому фоні */
+  padding: 5px;
+  border-radius: 5px; /* Округлені кути */
+}
