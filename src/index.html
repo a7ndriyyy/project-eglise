@@ -6,9 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ÉGLISE UKRAINIENNE ORTHODOXE</title>
     <link rel="stylesheet" href="/src/main.css" />
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          overflow-x: hidden;
+      }
+      .menu {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          top: 0;
+          right: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+      }
+      .menu a {
+          padding: 15px 25px;
+          text-decoration: none;
+          font-size: 22px;
+          color: #ddd;
+          display: block;
+          transition: 0.3s;
+      }
+      .menu a:hover {
+          color: #fff;
+      }
+      .menu .languages {
+          position: absolute;
+          bottom: 20px;
+          width: 100%;
+          text-align: center;
+      }
+      .menu .languages a {
+          font-size: 18px;
+          display: inline-block;
+          margin: 0 10px;
+      }
+      .open-btn {
+          font-size: 24px;
+          cursor: pointer;
+          position: fixed;
+          top: 20px;
+          right: 30px;
+          color: #111;
+      }
+      .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 25px;
+          font-size: 36px;
+      }
+  </style>
   </head>
-  
   <body>
+    <span class="open-btn" onclick="openNav()">☰ Меню</span>
+    <div id="myMenu" class="menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+      <a href="#about">Про нас</a>
+      <a href="#schedule">Графік</a>
+      <a href="#contacts">Контакти</a>
+      <a href="#support">Підтримати</a>
+      
+      <div class="languages">
+          <a href="?lang=uk">UA</a>
+          <a href="?lang=en">EN</a>
+      </div>
+  </div>
     <header class="top-line link">
       <div class="container">
         <div class="header-div">
@@ -48,7 +114,7 @@
             <a
               id="aboutUs"
               class="link nav-link"
-              href="../src/partials/aboutUs.html"
+              href="../src/index.html"
               >Про нас</a
             >
           </li>
@@ -131,5 +197,15 @@
         updateText('ua');
       </script>
     </div>
+    <script>
+      function openNav() {
+          document.getElementById("myMenu").style.width = "300px";
+      }
+      
+      function closeNav() {
+          document.getElementById("myMenu").style.width = "0";
+      }
+  </script>
+  
   </body>
 </html>
