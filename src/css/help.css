@@ -1,5 +1,5 @@
 .div-bg {
-  background-color: antiquewhite;
+  background-color: #4a7abe;
   /* display: flex; */
   width: 800px;
   box-shadow: 20px 20px 20px rgba(46, 47, 66, 0.08),
@@ -28,6 +28,7 @@
 }
 .title-church {
   margin-top: 10px;
+  color: rgb(215, 182, 84);
 }
 .list-card {
   row-gap: 10px;
@@ -35,10 +36,12 @@
 .text-title-help {
   margin-top: auto;
   padding-bottom: 8px;
+  color: rgb(215, 182, 84);
 }
 .under-text-help {
   justify-content: center;
   margin-left: 200px;
+  color: rgb(215, 182, 84);
 }
 .help-contacts-div {
   margin-top: 80px;
@@ -49,16 +52,21 @@
 }
 
 .help-contacts-link {
-  color: #e09b2d;
+  color: #fcfcfc;
 }
 
 .help-contacts-link:hover,
 .help-contacts-link:focus {
-  color: rgb(215, 182, 84);
+  color: rgb(224, 209, 165);
 }
 
 /* FOOTER */
 .footer {
   padding: 100px 0;
-  background-color: gray;
+  background-color: #1e447a;
+}
+
+.footer-text{
+  padding-top: 30px;
+  margin-left: 445px;
 }

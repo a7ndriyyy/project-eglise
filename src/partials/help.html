@@ -7,59 +7,55 @@
     <title>Підтримати</title>
     <link rel="stylesheet" href="/src/main.css" />
   </head>
-  <body>
-    <header class="top-line link">
-      <div class="container">
-        <div class="header-div">
-          <ul class="list ul-header">
-            <li class="list-1">
-              <h1 class="logo link">
-                УKRAЇНСЬKA AВTOKEФAЛЬНA ПРAВOСЛAВНA ЦEРKВA
-              </h1>
-              <p class="link">Пaрaфія Св. Симона y Парижі</p>
-            </li>
-            <li class="list-2">
-              <img
-                class="link img-church"
-                src="../images/Church.jpg"
-                alt="church"
-                width="300px"
-                height="200px"
-              />
-              <p class="link">6, rue de Palestine 75019 Paris</p>
-            </li>
-            <li class="list-3">
-              <h1 class="logo link">
-                ÉGLISE UKRAINIENNE ORTHODOXE AUTOCÉPHALE
-              </h1>
-              <p class="link">Paroisse St. Simon à Paris</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+  <header class="top-line link">
     <div class="container">
-    <nav class="nav link">
-      <ul class="list link ul">
-     
-
-        <li class="link menu-list">
-          <a class="link nav-link" href="../index.html">Про нас</a>
-        </li>
-     
-
+      <div class="header-div">
+        <ul class="list ul-header">
+          <li class="list-1">
+            <h1 class="logo link">
+              УKRAЇНСЬKA AВTOKEФAЛЬНA ПРAВOСЛAВНA ЦEРKВA
+            </h1>
+            <p class="link">Пaрaфія Св. Симона y Парижі</p>
+          </li>
+          <li class="list-2">
+            <img
+              class="link img-church"
+              src="../images/Church.jpg"
+              alt="church"
+              width="300px"
+              height="200px"
+            />
+            <p class="link">6, rue de Palestine 75019 Paris</p>
+          </li>
+          <li class="list-3">
+            <h1 class="logo link">
+              ÉGLISE UKRAINIENNE ORTHODOXE AUTOCÉPHALE
+            </h1>
+            <p class="link">Paroisse St. Simon à Paris</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <body>
+    <span class="open-btn" onclick="openNav()">☰ Меню</span>
+    <div id="myMenu" class="menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
+      <a href="/src/index.html" class="link nav-link ">Про нас</a>
+      <a href="/src/partials/horaire.html" class="link nav-link ">Графік</a>
+      <a href="/src/partials/contacts.html" class="link nav-link ">Контакти</a>
+      <a href="/src/partials/help.html" class="link nav-link border">Підтримати</a>
       
-        <li class="link menu-list">
-          <a class="link nav-link" href="./horaire.html">Графік</a>
-        </li>
-        <li class="link menu-list">
-          <a class="link nav-link" href="./contacts.html">Контакти</a>
-        </li>
-        <li class="link menu-list">
-          <a class="link nav-link border" href="">Підтримати</a>
-        </li>
-      </ul>
-    </nav>
+      <div class="languages">
+           <label for="language-select">Languages:</label>
+          <select id="language-select">
+            <option value="ua">Українська</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+          </select>
+      </div>
+  </div>
+    <div class="container">
     <section class="section-help">
       <h1 class="title-help">Зробіть пожертву</h1>
       <div class="div-bg">
@@ -111,25 +107,35 @@
       </div>
     </section>
     </div>
-    <footer class="footer">
-      <div class="container flex">
-       <nav class="nav link">
-      <ul class="list link ul">
-        <li class="link menu-list">
-          <a class="link nav-link" href="../index.html">Про нас</a>
-        </li>
-        <li class="link menu-list">
-          <a class="link nav-link" href="./horaire.html">Графік</a>
-        </li>
-        <li class="link menu-list">
-          <a class="link nav-link" href="./contacts.html">Контакти</a>
-        </li>
-        <li class="link menu-list">
-          <a class="link nav-link border" href="">Підтримати</a>
-        </li>
-      </ul>
-    </nav>
-      </div>
-    </footer>
+    <script>
+      function openNav() {
+          document.getElementById("myMenu").style.width = "300px";
+      }
+      
+      function closeNav() {
+          document.getElementById("myMenu").style.width = "0";
+      }
+  </script>
   </body>
+  <footer class="footer">
+    <div class="container flex">
+     <nav class="nav link">
+    <ul class="list link ul">
+      <li class="link menu-list">
+        <a class="link nav-link" href="../index.html">Про нас</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link" href="./horaire.html">Графік</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link" href="./contacts.html">Контакти</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link border" href="">Підтримати</a>
+      </li>
+    </ul>
+  </nav>
+  <p class="footer-text">@Copyright-2025</p>
+    </div>
+  </footer>
 </html>

@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: bisque;
+  background-color: #4a7abe;
   width: 270px;
   padding: 20px;
   margin-right: auto;
@@ -30,21 +30,21 @@
   margin-top: 70px;
   font-size: 40px;
   text-align: center; /* Center the title */
-  color: #333; /* Ensure good contrast and readability */
+  color:rgb(215, 182, 84); /* Ensure good contrast and readability */
 }
 .contact-li {
   font-size: 22px;
   text-align: center; /* Center the text */
-  color: #333;
+  color: rgb(215, 182, 84);
 }
 .contact-nav {
-  color: #0056b3; /* Make links blue */
+  color: rgb(215, 182, 84); /* Make links blue */
   text-decoration: none; /* Remove underline */
   font-size: 18px;
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
 .contact-nav:hover {
-  color: #003366; /* Darker blue on hover */
+  color: #e09b2d; /* Darker blue on hover */
 }
 .margin-contact {
   margin-bottom: 20px;

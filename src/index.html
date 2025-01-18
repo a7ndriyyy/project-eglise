@@ -6,169 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ÉGLISE UKRAINIENNE ORTHODOXE</title>
     <link rel="stylesheet" href="/src/main.css" />
-    <style>
-      body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          overflow-x: hidden;
-      }
-      .menu {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          top: 0;
-          right: 0;
-          background-color: #111;
-          overflow-x: hidden;
-          transition: 0.5s;
-          padding-top: 60px;
-      }
-      .menu a {
-          padding: 15px 25px;
-          text-decoration: none;
-          font-size: 22px;
-          color: #ddd;
-          display: block;
-          transition: 0.3s;
-      }
-      .menu a:hover {
-          color: #fff;
-      }
-      .menu .languages {
-          position: absolute;
-          bottom: 20px;
-          width: 100%;
-          text-align: center;
-      }
-      .menu .languages a {
-          font-size: 18px;
-          display: inline-block;
-          margin: 0 10px;
-      }
-      .open-btn {
-          font-size: 24px;
-          cursor: pointer;
-          position: fixed;
-          top: 20px;
-          right: 30px;
-          color: #111;
-      }
-      .close-btn {
-          position: absolute;
-          top: 10px;
-          right: 25px;
-          font-size: 36px;
-      }
-  </style>
   </head>
+  <header class="top-line link">
+    <div class="container">
+      <div class="header-div">
+        <ul class="list ul-header">
+          <li class="list-1">
+            <h1 class="logo link">УKRAЇНСЬKA ПРAВOСЛAВНA ЦEРKВA</h1>
+            <p class="link">Пaрaфія Св. Симона y Парижі</p>
+          </li>
+          <li class="list-2">
+            <img
+              class="link img-church"
+              src="./images/Church.jpg"
+              alt="church"
+              width="300px"
+              height="200px"
+            />
+            <p class="link">6, rue de Palestine 75019 Paris</p>
+          </li>
+          <li class="list-3">
+            <h1 class="logo link">ÉGLISE UKRAINIENNE ORTHODOXE</h1>
+            <p class="link">Paroisse St. Simon à Paris</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
   <body>
+    <div class="container">
     <span class="open-btn" onclick="openNav()">☰ Меню</span>
     <div id="myMenu" class="menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
-      <a href="#about">Про нас</a>
-      <a href="#schedule">Графік</a>
-      <a href="#contacts">Контакти</a>
-      <a href="#support">Підтримати</a>
+      <a href="/src/index.html" class="link nav-link border" id="aboutUs">Про нас</a>
+      <a href="/src/partials/horaire.html" class="link nav-link" id="schedule">Графік</a>
+      <a href="/src/partials/contacts.html" class="link nav-link" id="contacts">Контакти</a>
+      <a href="/src/partials/help.html" class="link nav-link" id="support">Підтримати</a>
       
       <div class="languages">
-          <a href="?lang=uk">UA</a>
-          <a href="?lang=en">EN</a>
-      </div>
-  </div>
-    <header class="top-line link">
-      <div class="container">
-        <div class="header-div">
-          <ul class="list ul-header">
-            <li class="list-1">
-              <h1 class="logo link">УKRAЇНСЬKA ПРAВOСЛAВНA ЦEРKВA</h1>
-              <p class="link">Пaрaфія Св. Симона y Парижі</p>
-            </li>
-            <li class="list-2">
-              <img
-                class="link img-church"
-                src="./images/Church.jpg"
-                alt="church"
-                width="300px"
-                height="200px"
-              />
-              <p class="link">6, rue de Palestine 75019 Paris</p>
-            </li>
-            <li class="list-3">
-              <h1 class="logo link">ÉGLISE UKRAINIENNE ORTHODOXE</h1>
-              <p class="link">Paroisse St. Simon à Paris</p>
-            </li>
-          </ul>
-          <label for="language-select">Languages:</label>
+           <label for="language-select">Languages:</label>
           <select id="language-select">
             <option value="ua">Українська</option>
             <option value="en">English</option>
             <option value="fr">Français</option>
           </select>
+      </div>
+  </div>
+    <div class="container">
+      <section>
+        <div class="container-history" >
+      <h1 class="title-history">Українська автокефальна православна церква (УАПЦ)</h1>
+      <p class="text-history">Історія нашої церкви, УАПЦ – це спроба відновити Київську митрополію, церкву для народу. Наша Київська митрополія була поглинена Московським патріархатом. Вже у 1685 році висвячення митрополита Київського Гедеона Московським патріархом Йоакимом у Московії розпочало процес поглинання Київської митрополії Московським патріархатом. Основною причиною анексії став акт Вселенського патріархату Константинополя 1686 року, що давав право висвячувати київського митрополита московському патріарху. Київський митрополит мав згадувати вселенського патріарха Константинополя найпершим і цим підтверджувати владу вселенського патріарха Константинополя над Київською митрополією. Результатом стала ліквідація Київської митрополії в 1722 році Петром І.  Тлумачення цього акту Московським патріархатом та Вселенським патріархатом різне. Московський патріархат твердить про передачу Київської митрополії Москві, а Вселенський лише про дозвіл висвячення київського митрополита. 
+
+ 
+
+        Початок УАПЦ – це спроба відновити те, що було втрачено. Бажання українського народу мати свою власну державу йшло поряд з бажанням мати свою національну церкву. Жовтнева революція 1917 року в Росії, або радше переворот, дав поштовх до утворення як української державності, так і української церкви. Як духовні так і світські провідники народу бажали не тільки утворення української держави, але й відновлення Київської митрополії, української церкви, де люди могли молитися та слухати Євангеліє рідною мовою. Недарма Василь Липківський, колишній священик Московського патріархату, назвав 9 травня 1919 року (день літнього святого Миколая) днем народження УАПЦ. Бо саме в цей день відбулась перша літургія з читання Святого Письма псалмів і кантів українською мовою. А Микола Леонтович написав з цієї нагоди перші ноти та особисто диригував хором.  
+        
+        УАПЦ змогла проіснувати на теренах України до кінця 1930 років, однак була знищена внаслідок терору та репресій влади СРСР. Але змогла вижити в еміграції, головним чином у Канаді, також у США та Європі, та навіть Австралії та Бразилії. Переїзд до Парижу головного отамана Симона Петлюри, еміграція інтелігенції до Парижу, Ліону, Тулузи, Гренобля 1924 року, приїзд численних військових армії УНР – така численна еміграція стреміла до закладення національної церкви на чолі зі своїм священиком. У 1925 році церковне життя концентрувалося виключно у селах Франції, але вже у листопаді цього року було створене церковне братство на чолі з Іваном Карбовським у Біянкурі біля Парижу. У квітні 1926 року в Оден-ле-Тіш (Мозель) відбувся перший церковний з’їзд українців у Франції. З Парижу був генерал Олександр Удовиченко. Там було прийнято рішення стати під юрисдикцію УАПЦ на чужині під керівництвом архімандрита Іоана Теодоровича. А вже влітку на богослужіннях у всіх громадах було зачитано привітання від митрополита Василя Липківського від четвертого травня 1926 року: «Любі брати і сестри, діти нашої рідної Української Православної Автокефальної Церкви на теренах Франції! З міста Києва, від Святої Софії Київської, посилаю щире привітання всім Вам, що хоч далеко відбились від своєї матері, але однаково близькі і дорогі їй. Вітає Вас велика громада парафіян Святої Софії, що зараз радісно святкує Великдень. Вітає Вас Всеукраїнська Православна Церковна Рада, що непохитно стоїть коло керма нашої церкви, в ці тяжкі для неї часи. Я ж як перший слуга Церкви вільного народу по всьому світі розкиданого, посилаю Вам моє щире благословенство…».  
+        
+        Паризька громада прийняла рішення назвати церкву, церквою Святого Симона Зилота на честь головного отамана Симона Петлюри. Богослужіння наша громада спочатку проводила 	у протестантських храмах, потім нам було передано у безкоштовне користування храм Святого Дениса на бульварі Бланкі від старо-католиків. Перша літургія і панахида по С. Петлюрі відбулася при участі українців і французьких католицьких парафіян цієї церкви. Правив священник П. Гречишкин, настоятель парафій УАПЦ у Франції. У 1947 році наша церква переїхала у приватний будинок у 20-ому окрузі Парижа. Цей будиночок був придбаний інж. Созонтів. Згодом будинок було знесено, а громадою був куплений нинішній будинок на вулиці Палестін.  
+        
+        У 1995 році УАПЦ у США, з метою врегулювання свого канонічного статусу, ввійшла під омофор Вселенської патріархії. Раніше, у 1990 році, таким шляхом пішла УПЦ  у Канаді. Усі єпископи 12 березня 1995 року були прийняті у Константинопольський патріархат у сущому сані всупереч практиці перерукоположення, яку застосовувала до автокефальних українських владик Московська патріархія.  
+        
+        Опікується нашою церквою архієпископ Даниїл Памфілійський (Володимир Зелінський), очільник Західної єпархії Української православної церкви у США Вселенського патріархату та опікун українськими православними в Західній Європі, включно з Великобританією. Саме він, разом з єпископом Іларіоном Едмонтонським з Канади, був призначений екзархом (представником) Вселенським патріархом Варфоломієм у рамках підготовки до надання Православній церкві в Україні автокефалії.</p>
+      </div>
+      <button id="learnMoreBtn" class="btn btn-primary">Дізнатися більше</button>
+      <div id="fileModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="closeModal">&times;</span>
+          <h2>Завантаження файлів</h2>
+          <ul class="file-list">
+            <!-- File links will go here -->
+            <li><a href="./downloads/УАПЦ історія 1998.pdf" download>УАПЦ історія 1998</a></li>
+            <li><a href="./downloads/шлях_перемоги_01051960_звернення_у_справі_будови.pdf" download>шлях_перемоги_01051960_звернення_у_справі_будови</a></li>
+            <li><a href="./downloads/установчі_збори_братства_Св_Симона_1964 (2).pdf" download>установчі_збори_братства_Св_Симона_1964</a></li>
+            <li><a href="./downloads/УАПЦ нарис історії.  16 p -1924-1947pp. (2).pdf" download>УАПЦ нарис історії.  16 p -1924-1947pp.</a></li>
+            <li><a href="./downloads/УАПЦ історичний огляд 3 page.pdf" download>УАПЦ історичний огляд 3 page</a></li>
+            <li><a href="./downloads/УАПЦ заклик.pdf" download>УАПЦ заклик</a></li>
+            <li><a href="./downloads/статут УАПЦ на еміграції проєкт.pdf" download>статут УАПЦ на еміграції проєкт</a></li>
+            <li><a href="./downloads/vie du St apôtre Simon le Zelote.pdf" download>vie du St apôtre Simon le Zelote</a></li>
+            <li><a href="./downloads/Statut_для_укр_прав_парафій_УАПЦ_на_еміграції_1949.pdf" download>Statut_для_укр_прав_парафій_УАПЦ_на_еміграції_1949</a></li>
+            <li><a href="./downloads/statut paroisse 1953 domiciliation lhomond.pdf" download>statut paroisse 1953 domiciliation lhomond</a></li>
+            <li><a href="./downloads/statut paroise ukr dom Lhomond.pdf" download>statut paroise ukr dom Lhomond</a></li>
+            <li><a href="./downloads/paroisse, batiments histoire une page français.pdf" download>paroisse, batiments histoire une page français</a></li>
+            <li><a href="./downloads/l'église orthodoxe ukrainienne en France doc 4 pages.pdf" download>l'église orthodoxe ukrainienne en France doc 4 pages</a></li>
+            <li><a href="./downloads/extrait de statut paroisse 1953.pdf" download>extrait de statut paroisse 1953</a></li>
+            <li><a href="./downloads/encyclopédie QUID.pdf" download>encyclopédie QUID</a></li>
+            <li><a href="./downloads/achats ventes des bâtiments ukrainiens -6 rue de Palestine.pdf" download>achats ventes des bâtiments ukrainiens -6 rue de Palestine</a></li>
+          </ul>
         </div>
       </div>
-    </header>
-    <div class="container">
-      <nav class="nav link">
-        <ul class="list link ul">
-          <li class="link menu-list">
-            <a
-              id="aboutUs"
-              class="link nav-link"
-              href="../src/index.html"
-              >Про нас</a
-            >
-          </li>
-          <li class="link menu-list">
-            <a
-              id="schedule"
-              class="link nav-link"
-              href="../src/partials/horaire.html"
-              >Графік</a
-            >
-          </li>
-          <li class="link menu-list">
-            <a
-              id="contacts"
-              class="link nav-link"
-              href="../src/partials/contacts.html"
-              >Контакти</a
-            >
-          </li>
-          <li class="link menu-list">
-            <a
-              id="support"
-              class="link nav-link"
-              href="../src/partials/help.html"
-              >Підтримати</a
-            >
-          </li>
-        </ul>
-      </nav>
+      </section>
+    </div>
       <script>
         const translations = {
           en: {
-            navigation: 'News',
             aboutUs: 'About Us',
-            projects: 'Projects',
-            pastorWords: 'Pastor’s Word',
             schedule: 'Schedule',
             contacts: 'Contacts',
             support: 'Support',
           },
           ua: {
-            navigation: 'Новини',
             aboutUs: 'Про нас',
-            projects: 'Проєкти',
-            pastorWords: 'Пасторське слово',
             schedule: 'Графік',
             contacts: 'Контакти',
             support: 'Підтримати',
           },
           fr: {
-            navigation: 'Nouvelles',
             aboutUs: 'À propos de nous',
-            projects: 'Projets',
-            pastorWords: 'Parole du pasteur',
             schedule: 'Horaires',
             contacts: 'Contacts',
             support: 'Soutenir',
@@ -196,7 +141,6 @@
         // Встановлюємо мову за замовчуванням (наприклад, українську)
         updateText('ua');
       </script>
-    </div>
     <script>
       function openNav() {
           document.getElementById("myMenu").style.width = "300px";
@@ -205,7 +149,49 @@
       function closeNav() {
           document.getElementById("myMenu").style.width = "0";
       }
+
+      const modal = document.getElementById("fileModal");
+      const openModalBtn = document.getElementById("learnMoreBtn");
+      const closeModalBtn = document.getElementById("closeModal");
+
+      // Open modal
+      openModalBtn.addEventListener("click", () => {
+        modal.style.display = "block";
+      });
+
+      // Close modal
+      closeModalBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+
+      // Close modal on outside click
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
   </script>
-  
+  </div>
   </body>
+  <footer class="footer">
+    <div class="container flex">
+     <nav class="nav link">
+    <ul class="list link ul">
+      <li class="link menu-list">
+        <a class="link nav-link border" href="/src/index.html">Про нас</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link" href="/src/partials/horaire.html">Графік</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link" href="/src/partials/contacts.html">Контакти</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link" href="/src/partials/help.html">Підтримати</a>
+      </li>
+    </ul>
+  </nav>
+  <p class="footer-text">@Copyright-2025</p>
+    </div>
+  </footer>
 </html>

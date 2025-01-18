@@ -1,8 +1,8 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #434455;
+  /* background-color: #f2f1c4; */
+  color: #e09b2d;
   position: relative;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(/src/images/backplan.jpg);
 }
 
 h1,
@@ -14,6 +14,12 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+}
+header{
+  margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
 }
 .list {
   list-style: none;

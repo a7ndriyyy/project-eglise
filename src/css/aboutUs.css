@@ -1,0 +1,116 @@
+.container-history {
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners for modern look */
+  padding: 20px 30px; /* Spacing inside the container */
+  margin: 20px auto; /* Center the container and add space around it */
+  max-width: 900px; /* Limit width for better readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the title */
+.title-history {
+  font-size: 28px; /* Larger font for emphasis */
+  font-weight: bold; /* Bold text for prominence */
+  color: #333; /* Dark color for good contrast */
+  margin-bottom: 15px; /* Space below the title */
+  text-align: center; /* Center the title */
+  line-height: 1.4; /* Better spacing between lines */
+}
+
+/* Styling for the text */
+.text-history {
+  font-size: 16px; /* Comfortable font size for reading */
+  line-height: 1.8; /* Proper line spacing for readability */
+  color: #555; /* Neutral gray for less strain on the eyes */
+  text-align: justify; /* Justify text for a clean block layout */
+  margin-top: 10px; /* Space between text and other elements */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .close-btn {
+    color: #dadb8f;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close-btn:hover,
+  .close-btn:focus {
+    color: rgb(226, 235, 179);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .file-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .file-list li {
+    margin: 10px 0;
+  }
+
+  .file-list a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .file-list a:hover {
+    text-decoration: underline;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 450px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    transform: translateY(-2px); /* Slight "lift" effect */
+  }
+  
+  .btn-primary:active {
+    background-color: #003f7f; /* Even darker shade when pressed */
+    transform: translateY(1px); /* Button depress effect */
+  }
+  
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Accessibility focus ring */
+  }
