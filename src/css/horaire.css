@@ -1,7 +1,60 @@
-/* .backimages {
-  background-image: url('../images/Church.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
-} */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ddd;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.social-media{
+  margin-left: 400px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.social-list-above {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.li-footer {
+  display: inline-block;
+}
+
+.link-footer {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.link-footer:hover {
+  transform: scale(1.1);
+}
+
+.footer-media{
+  margin-left:100px ;
+}
+
+.footer-social-media{
+  margin-left:100px;
+}
+

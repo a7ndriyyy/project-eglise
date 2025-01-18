@@ -41,10 +41,10 @@
     <span class="open-btn" onclick="openNav()">☰ Меню</span>
     <div id="myMenu" class="menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
-      <a href="/src/index.html" class="link nav-link ">Про нас</a>
-      <a href="/src/partials/horaire.html" class="link nav-link ">Графік</a>
-      <a href="/src/partials/contacts.html" class="link nav-link ">Контакти</a>
-      <a href="/src/partials/help.html" class="link nav-link border">Підтримати</a>
+      <a href="/src/index.html" class="link nav-link "id="aboutUs">Про нас</a>
+      <a href="/src/partials/horaire.html" class="link nav-link" id="schedule">Графік</a>
+      <a href="/src/partials/contacts.html" class="link nav-link " id="contacts">Контакти</a>
+      <a href="/src/partials/help.html" class="link nav-link border" id="support">Підтримати</a>
       
       <div class="languages">
            <label for="language-select">Languages:</label>
@@ -116,6 +116,7 @@
           document.getElementById("myMenu").style.width = "0";
       }
   </script>
+  <script src="../js/translator.js"></script>
   </body>
   <footer class="footer">
     <div class="container flex">

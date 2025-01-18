@@ -41,11 +41,10 @@
     <span class="open-btn" onclick="openNav()">☰ Меню</span>
     <div id="myMenu" class="menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
-      <a href="/src/index.html">Про нас</a>
-      <a href="/src/partials/horaire.html" class="border">Графік</a>
-      <a href="/src/partials/contacts.html">Контакти</a>
-      <a href="/src/partials/help.html">Підтримати</a>
-      
+      <a href="/src/index.html" class="link nav-link "id="aboutUs">Про нас</a>
+      <a href="/src/partials/horaire.html" class="link nav-link border" id="schedule">Графік</a>
+      <a href="/src/partials/contacts.html" class="link nav-link " id="contacts">Контакти</a>
+      <a href="/src/partials/help.html" class="link nav-link" id="support">Підтримати</a>
       <div class="languages">
            <label for="language-select">Languages:</label>
           <select id="language-select">
@@ -56,10 +55,56 @@
       </div>
   </div>
     <div class="container">
-      <div>
-        <h1>Наш графік</h1>
-        <p>Церква відкрита щонеділі з 10 </p>
+      <section>
+        <div>
+          <h1 class="title-contacts">Наш графік</h1>
+          <table id="schedule-table" class="schedule-table">
+            <thead>
+              <tr>
+                <th>День</th>
+                <th>Час</th>
+                <th>Подія</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows will be dynamically populated -->
+            </tbody>
+          </table>
+          <div class="help-contacts-div">
+          <p class="help-contacts-text">Знайти більше інформації про розклад служінь церкви ви можете в наших соціальних мережах :</p>
+        </div>
+        <div class="social-media">
+        <ul class="list social-list-above">
+          <h3>instagram:</h3>
+          <li class="li-footer">
+            <a href="https://www.instagram.com" target="_blank" class="link link-footer" aria-label="Instagram">
+              <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <defs>
+                  <linearGradient id="instagram-gradient" x1="0.5" y1="0" x2="0.5" y2="1">
+                    <stop offset="0%" stop-color="#f58529" />
+                    <stop offset="50%" stop-color="#dd2a7b" />
+                    <stop offset="100%" stop-color="#8134af" />
+                  </linearGradient>
+                </defs>
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="url(#instagram-gradient)"></rect>
+                <circle cx="12" cy="12" r="4" fill="#fff"></circle>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="#fff"></circle>
+              </svg>
+            </a>
+          </li>
+          <h3>facebook:</h3>
+          <li class="li-footer">
+            <a href="https://www.facebook.com" target="_blank" class="link link-footer" aria-label="Facebook">
+              <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.093 4.388 22.963 10.125 24v-8.437H7.078v-3.49h3.047V9.412c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.492 0-1.956.927-1.956 1.874v2.257h3.328l-.531 3.49h-2.797V24C19.612 22.963 24 18.093 24 12.073z"></path>
+                <path fill="#fff" d="M16.671 15.563l.531-3.49h-3.328V9.816c0-.947.464-1.874 1.956-1.874h1.513V5.987s-1.374-.235-2.686-.235c-2.74 0-4.533 1.661-4.533 4.668v2.664H7.078v3.49h3.047V24h3.656v-8.437h2.797z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
+        </div>
+      </section>
     </div>
     <script>
       function openNav() {
@@ -70,5 +115,30 @@
           document.getElementById("myMenu").style.width = "0";
       }
   </script>
+  <script src="../js/translator.js"></script>
+  <script src="../js/scheduleTable.js"></script>
+  
   </body>
+  <footer class="footer">
+    <div class="container flex">
+     <nav class="nav link">
+    <ul class="list link ul">
+      <li class="link menu-list">
+        <a class="link nav-link" href="/src/index.html">Про нас</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link border" href="/src/partials/horaire.html">Графік</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link" href="/src/partials/contacts.html">Контакти</a>
+      </li>
+      <li class="link menu-list">
+        <a class="link nav-link" href="/src/partials/help.html">Підтримати</a>
+      </li>
+    </ul>
+  </nav>
+  <p class="footer-text">@Copyright-2025</p>
+    </div>
+  </footer>
+  
 </html>
