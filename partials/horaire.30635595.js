@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){var t=document.querySelector("#schedule-table tbody");[{day:"Неділя",time:"10:00",event:"Божественна Літургія"}].forEach((function(e){var n=document.createElement("tr");n.innerHTML="\n        <td>".concat(e.day,"</td>\n        <td>").concat(e.time,"</td>\n        <td>").concat(e.event,"</td>\n      "),t.appendChild(n)}))}));
+//# sourceMappingURL=horaire.30635595.js.map
