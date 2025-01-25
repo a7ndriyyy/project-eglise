@@ -1,29 +1,29 @@
 .container-history {
-  background-color: #f9f9f9; /* Light background for contrast */
-  border-radius: 10px; /* Rounded corners for modern look */
-  padding: 20px 30px; /* Spacing inside the container */
-  margin: 20px auto; /* Center the container and add space around it */
-  max-width: 900px; /* Limit width for better readability */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #f9f9f9;
+  border-radius: 10px; 
+  padding: 20px 30px; 
+  margin: 20px auto; 
+  max-width: 900px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Styling for the title */
+
 .title-history {
-  font-size: 28px; /* Larger font for emphasis */
-  font-weight: bold; /* Bold text for prominence */
-  color: #333; /* Dark color for good contrast */
-  margin-bottom: 15px; /* Space below the title */
-  text-align: center; /* Center the title */
-  line-height: 1.4; /* Better spacing between lines */
+  font-size: 28px; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 15px; 
+  text-align: center; 
+  line-height: 1.4; 
 }
 
-/* Styling for the text */
+
 .text-history {
-  font-size: 16px; /* Comfortable font size for reading */
-  line-height: 1.8; /* Proper line spacing for readability */
-  color: #555; /* Neutral gray for less strain on the eyes */
-  text-align: justify; /* Justify text for a clean block layout */
-  margin-top: 10px; /* Space between text and other elements */
+  font-size: 16px; 
+  line-height: 1.8; 
+  color: #555; 
+  text-align: justify; 
+  margin-top: 10px; 
 }
 
 .modal {
@@ -90,7 +90,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #007bff; /* Bootstrap primary blue */
+    background-color: #007bff; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -101,16 +101,16 @@
   }
   
   .btn-primary:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
-    transform: translateY(-2px); /* Slight "lift" effect */
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
   }
   
   .btn-primary:active {
-    background-color: #003f7f; /* Even darker shade when pressed */
-    transform: translateY(1px); /* Button depress effect */
+    background-color: #003f7f; 
+    transform: translateY(1px); 
   }
   
   .btn-primary:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); /* Accessibility focus ring */
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5); 
   }

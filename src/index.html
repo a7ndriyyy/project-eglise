@@ -35,7 +35,7 @@
   </header>
   <body>
     <div class="container">
-    <span class="open-btn" onclick="openNav()">☰ Меню</span>
+    <span class="open-btn" id="menu" onclick="openNav()">☰ Меню</span>
     <div id="myMenu" class="menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
       <a href="/src/index.html" class="link nav-link border" id="aboutUs">Про нас</a>
@@ -44,7 +44,7 @@
       <a href="/src/partials/help.html" class="link nav-link" id="support">Підтримати</a>
       
       <div class="languages">
-           <label for="language-select">Languages:</label>
+           <label for="language-select" id="language">Мови :</label>
           <select id="language-select">
             <option value="ua">Українська</option>
             <option value="en">English</option>
@@ -55,8 +55,8 @@
     <div class="container">
       <section>
         <div class="container-history" >
-      <h1 class="title-history">Українська автокефальна православна церква (УАПЦ)</h1>
-      <p class="text-history">Історія нашої церкви, УАПЦ – це спроба відновити Київську митрополію, церкву для народу. Наша Київська митрополія була поглинена Московським патріархатом. Вже у 1685 році висвячення митрополита Київського Гедеона Московським патріархом Йоакимом у Московії розпочало процес поглинання Київської митрополії Московським патріархатом. Основною причиною анексії став акт Вселенського патріархату Константинополя 1686 року, що давав право висвячувати київського митрополита московському патріарху. Київський митрополит мав згадувати вселенського патріарха Константинополя найпершим і цим підтверджувати владу вселенського патріарха Константинополя над Київською митрополією. Результатом стала ліквідація Київської митрополії в 1722 році Петром І.  Тлумачення цього акту Московським патріархатом та Вселенським патріархатом різне. Московський патріархат твердить про передачу Київської митрополії Москві, а Вселенський лише про дозвіл висвячення київського митрополита. 
+      <h1 class="title-history" id="title">Українська автокефальна православна церква (УАПЦ)</h1>
+      <p class="text-history" id="history">Історія нашої церкви, УАПЦ – це спроба відновити Київську митрополію, церкву для народу. Наша Київська митрополія була поглинена Московським патріархатом. Вже у 1685 році висвячення митрополита Київського Гедеона Московським патріархом Йоакимом у Московії розпочало процес поглинання Київської митрополії Московським патріархатом. Основною причиною анексії став акт Вселенського патріархату Константинополя 1686 року, що давав право висвячувати київського митрополита московському патріарху. Київський митрополит мав згадувати вселенського патріарха Константинополя найпершим і цим підтверджувати владу вселенського патріарха Константинополя над Київською митрополією. Результатом стала ліквідація Київської митрополії в 1722 році Петром І.  Тлумачення цього акту Московським патріархатом та Вселенським патріархатом різне. Московський патріархат твердить про передачу Київської митрополії Москві, а Вселенський лише про дозвіл висвячення київського митрополита. 
 
  
 
@@ -74,7 +74,7 @@
       <div id="fileModal" class="modal">
         <div class="modal-content">
           <span class="close-btn" id="closeModal">&times;</span>
-          <h2>Завантаження файлів</h2>
+          <h2 id="downloads">Завантаження файлів</h2>
           <ul class="file-list">
             <!-- File links will go here -->
             <li><a href="./downloads/УАПЦ історія 1998.pdf" download>УАПЦ історія 1998</a></li>
@@ -98,49 +98,6 @@
       </div>
       </section>
     </div>
-      <script src="./js/translator.js">
-        const translations = {
-          en: {
-            aboutUs: 'About Us',
-            schedule: 'Schedule',
-            contacts: 'Contacts',
-            support: 'Support',
-          },
-          ua: {
-            aboutUs: 'Про нас',
-            schedule: 'Графік',
-            contacts: 'Контакти',
-            support: 'Підтримати',
-          },
-          fr: {
-            aboutUs: 'À propos de nous',
-            schedule: 'Horaires',
-            contacts: 'Contacts',
-            support: 'Soutenir',
-          },
-        };
-
-        const titleElement = document.getElementById('navigation');
-        const languageSelect = document.getElementById('language-select');
-        const menuLinks = document.querySelectorAll('.nav-link');
-
-        function updateText(language) {
-          menuLinks.forEach(link => {
-            const linkId = link.id; // Використовуємо id елементу, замість тексту
-            if (translations[language][linkId]) {
-              link.textContent = translations[language][linkId];
-            }
-          });
-        }
-
-        languageSelect.addEventListener('change', () => {
-          const selectedLanguage = languageSelect.value;
-          updateText(selectedLanguage); // Оновлюємо текст на сторінці
-        });
-
-        // Встановлюємо мову за замовчуванням (наприклад, українську)
-        updateText('ua');
-      </script>
     <script>
       function openNav() {
           document.getElementById("myMenu").style.width = "300px";
@@ -178,20 +135,22 @@
      <nav class="nav link">
     <ul class="list link ul">
       <li class="link menu-list">
-        <a class="link nav-link border" href="/src/index.html">Про нас</a>
+        <a class="link nav-link border" href="/src/index.html" id="aboutUs">Про нас</a>
       </li>
       <li class="link menu-list">
-        <a class="link nav-link" href="/src/partials/horaire.html">Графік</a>
+        <a class="link nav-link" href="/src/partials/horaire.html" id="schedule">Графік</a>
       </li>
       <li class="link menu-list">
-        <a class="link nav-link" href="/src/partials/contacts.html">Контакти</a>
+        <a class="link nav-link" href="/src/partials/contacts.html" id="contacts">Контакти</a>
       </li>
       <li class="link menu-list">
-        <a class="link nav-link" href="/src/partials/help.html">Підтримати</a>
+        <a class="link nav-link" href="/src/partials/help.html" id="support">Підтримати</a>
       </li>
     </ul>
   </nav>
   <p class="footer-text">@Copyright-2025</p>
     </div>
   </footer>
+  <script src="./js/translator.js">
+  </script>
 </html>

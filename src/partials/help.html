@@ -38,7 +38,7 @@
     </div>
   </header>
   <body>
-    <span class="open-btn" onclick="openNav()">☰ Меню</span>
+    <span class="open-btn" id="menu" onclick="openNav()">☰ Меню</span>
     <div id="myMenu" class="menu">
       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
       <a href="/src/index.html" class="link nav-link "id="aboutUs">Про нас</a>
@@ -47,7 +47,7 @@
       <a href="/src/partials/help.html" class="link nav-link border" id="support">Підтримати</a>
       
       <div class="languages">
-           <label for="language-select">Languages:</label>
+           <label for="language-select" id="language">Languages:</label>
           <select id="language-select">
             <option value="ua">Українська</option>
             <option value="en">English</option>
@@ -57,7 +57,7 @@
   </div>
     <div class="container">
     <section class="section-help">
-      <h1 class="title-help">Зробіть пожертву</h1>
+      <h1 class="title-help" id="helpus">Зробіть пожертву</h1>
       <div class="div-bg">
         <div class="container-help-card">
       <div>
@@ -100,43 +100,44 @@
       </div>
       </div>
       <div class="help-contacts-div">
-        <p class="help-contacts-text">
-        Якщо ви хочете щоб ми могли подякувати вам і надіслати податкову квитанцію (для податкових резидентів Франції)
-        Ви можете <a href="./contacts.html" class="help-contacts-link">Зв'язатись з нами!</a>
+        <p class="help-contacts-text" id="getreponse">
+        Якщо ви хочете щоб ми могли подякувати вам і надіслати податкову квитанцію (для податкових резидентів Франції) 
+        Ви можете
       </p>
+      <a href="./contacts.html" id="contactsUS" class=" help-contacts-text help-contacts-link">Зв'язатись з нами!</a>
       </div>
     </section>
     </div>
-    <script>
-      function openNav() {
-          document.getElementById("myMenu").style.width = "300px";
-      }
-      
-      function closeNav() {
-          document.getElementById("myMenu").style.width = "0";
-      }
-  </script>
-  <script src="../js/translator.js"></script>
   </body>
   <footer class="footer">
     <div class="container flex">
      <nav class="nav link">
     <ul class="list link ul">
       <li class="link menu-list">
-        <a class="link nav-link" href="../index.html">Про нас</a>
+        <a class="link nav-link" href="../index.html" id="aboutUs">Про нас</a>
       </li>
       <li class="link menu-list">
-        <a class="link nav-link" href="./horaire.html">Графік</a>
+        <a class="link nav-link" href="./horaire.html" id="schedule">Графік</a>
       </li>
       <li class="link menu-list">
-        <a class="link nav-link" href="./contacts.html">Контакти</a>
+        <a class="link nav-link" href="./contacts.html" id="contacts">Контакти</a>
       </li>
       <li class="link menu-list">
-        <a class="link nav-link border" href="">Підтримати</a>
+        <a class="link nav-link border" href="" id="support">Підтримати</a>
       </li>
     </ul>
   </nav>
   <p class="footer-text">@Copyright-2025</p>
     </div>
   </footer>
+  <script>
+    function openNav() {
+        document.getElementById("myMenu").style.width = "300px";
+    }
+    
+    function closeNav() {
+        document.getElementById("myMenu").style.width = "0";
+    }
+</script>
+<script src="../js/translator.js"></script>
 </html>
