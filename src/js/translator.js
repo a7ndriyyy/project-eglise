@@ -1,5 +1,6 @@
 const translations = {
     en: {
+      ContactWithUs:'Contact Us',
       getreponse:`If you would like us to thank you and send you a tax receipt (for tax residents in France)
 You can`,
       helpus:'Make a donation',
@@ -21,6 +22,7 @@ You can`,
       history: `The history of our church, the UAOC, is an attempt to restore the Kyiv Metropolis, a church for the people. Our Kyiv Metropolis was absorbed by the Moscow Patriarchate. Already in 1685, the ordination of Metropolitan Gideon of Kyiv by the Moscow Patriarch Joachim in Muscovy began the process of the absorption of the Kyiv Metropolis by the Moscow Patriarchate. The main reason for the annexation was the act of the Ecumenical Patriarchate of Constantinople in 1686, which gave the right to ordain the Kyiv Metropolitan to the Moscow Patriarch. The Kyiv Metropolitan was to remember the Ecumenical Patriarch of Constantinople first and thereby confirm the authority of the Ecumenical Patriarch of Constantinople over the Kyiv Metropolis. The result was the liquidation of the Kyiv Metropolis in 1722 by Peter I. The interpretation of this act by the Moscow Patriarchate and the Ecumenical Patriarchate is different. The Moscow Patriarchate insists on the transfer of the Kyiv Metropolis to Moscow, and the Ecumenical Patriarchate only on the permission to consecrate the Kyiv Metropolitan. The beginning of the UAOC is an attempt to restore what was lost. The desire of the Ukrainian people to have their own state went hand in hand with the desire to have their own national church. The October Revolution of 1917 in Russia, or rather a coup, gave impetus to the formation of both Ukrainian statehood and the Ukrainian church. Both spiritual and secular leaders of the people wanted not only the formation of a Ukrainian state, but also the restoration of the Kyiv Metropolis, a Ukrainian church, where people could pray and listen to the Gospel in their native language. It is not for nothing that Vasyl Lypkivsky, a former priest of the Moscow Patriarchate, called May 9, 1919 (the day of the summer saint Nicholas) the birthday of the UAOC. Because it was on this day that the first liturgy with the reading of the Holy Scriptures, psalms and canticles in Ukrainian took place. And Mykola Leontovych wrote the first notes for this occasion and personally conducted the choir. The UAOC was able to exist in the territories of Ukraine until the end of the 1930s, but was destroyed as a result of terror and repressions by the USSR authorities. But it was able to survive in emigration, mainly in Canada, also in the USA and Europe, and even Australia and Brazil. The move to Paris of the main ataman Symon Petliura, the emigration of the intelligentsia to Paris, Lyon, Toulouse, Grenoble in 1924, the arrival of numerous soldiers of the UNR army - such a large emigration strove to establish a national church headed by its priest. In 1925, church life was concentrated exclusively in the villages of France, but already in November of that year, a church brotherhood was created in Biancourt near Paris, headed by Ivan Karbovsky. In April 1926, the first church congress of Ukrainians in France was held in Auden-le-Tiche (Moselle). General Oleksandr Udovichenko was from Paris. There, a decision was made to come under the jurisdiction of the UAOC abroad under the leadership of Archimandrite Ioan Teodorovich. And already in the summer, at the services in all communities, a greeting from Metropolitan Vasyl Lypkivsky dated May 4, 1926 was read out: “Dear brothers and sisters, children of our native Ukrainian Orthodox Autocephalous Church in the lands of France! From the city of Kyiv, from Saint Sophia of Kyiv, I send sincere greetings to all of you, who, although far away from your mother, are equally close and dear to her. The large community of parishioners of St. Sophia, who are now joyfully celebrating Easter, greets you. The All-Ukrainian Orthodox Church Council, which stands steadfastly at the helm of our church in these difficult times for it, greets you. As the first servant of the Church of the Free People scattered throughout the world, I send you my sincere blessing…”. The Paris community decided to name the church the Church of St. Simon the Zealot in honor of the chief ataman Symon Petliura. Our community initially held services in Protestant churches, then the church of St. Denis on Boulevard Blanche was given to us for free use by the Old Catholics. The first liturgy and memorial service for S. Petliura was held with the participation of Ukrainians and French Catholic parishioners of this church. Priest P. Grechishkin, rector of parishes of the UAOC in France, officiated. In 1947, our church moved to a private house in the 20th arrondissement of Paris. This house was purchased by Eng. Sozontov. Later, the house was demolished, and the community purchased the current house on Palestine Street. In 1995, the UAOC in the USA, in order to regulate its canonical status, entered under the omophorion of the Ecumenical Patriarchate. Earlier, in 1990, the UOC in Canada followed this path. On March 12, 1995, all bishops were accepted into the Patriarchate of Constantinople in their full rank, contrary to the practice of re-ordination, which was applied to autocephalous Ukrainian bishops by the Moscow Patriarchate. Our church is under the care of Archbishop Daniel of Pamphylia (Volodymyr Zelinsky), head of the Western Eparchy of the Ukrainian Orthodox Church in the United States of the Ecumenical Patriarchate and guardian of the Ukrainian Orthodox in Western Europe, including Great Britain. It was he, along with Bishop Hilarion of Edmonton from Canada, who was appointed exarch (representative) by Ecumenical Patriarch Bartholomew in preparation for granting autocephaly to the Orthodox Church in Ukraine.`,
     },
     ua: {
+      ContactWithUs:`Зв'язатись з нами`,
       getreponse:`Якщо ви хочете щоб ми могли подякувати вам і надіслати податкову квитанцію (для податкових резидентів Франції)
         Ви можете`,
       helpus:'Зробіть пожертву',
@@ -54,6 +56,7 @@ You can`,
         Опікується нашою церквою архієпископ Даниїл Памфілійський (Володимир Зелінський), очільник Західної єпархії Української православної церкви у США Вселенського патріархату та опікун українськими православними в Західній Європі, включно з Великобританією. Саме він, разом з єпископом Іларіоном Едмонтонським з Канади, був призначений екзархом (представником) Вселенським патріархом Варфоломієм у рамках підготовки до надання Православній церкві в Україні автокефалії.`,
     },
     fr: {
+      ContactWithUs:'Contactez-nous',
       getreponse:`Si vous souhaitez que nous vous remerciions et vous adressions un reçu fiscal (pour les résidents fiscaux en France)
  Vous pouvez`,
       helpus:'Faire un don',
@@ -149,23 +152,29 @@ You can`,
   function updateText(language) {
     translatableElements.forEach(element => {
       const key = element.id;
-      if (translations[language][key]) {
+      if (translations[language] && translations[language][key]) {
         element.textContent = translations[language][key];
-      }
+    }
     });
+    if (languageSelect) {
+      languageSelect.value = language;
   }
-  
-
+  }
   function setLanguage(lang) {
-    localStorage.setItem("selectedLanguage", lang); // Save to localStorage
-    updateContent(lang);
-  }
+    localStorage.setItem("selectedLanguage", lang); // Зберігаємо мову
+    updateText(lang);
+}
+
+
+
+languageSelect.addEventListener('change', () => {
+  const selectedLanguage = languageSelect.value;
+  setLanguage(selectedLanguage);
+});
+
+// Встановлюємо збережену мову або за замовчуванням "ua"
+document.addEventListener("DOMContentLoaded", function () {
+  const savedLanguage = localStorage.getItem("selectedLanguage") || "ua";
+  updateText(savedLanguage);
+});
   
-
-  languageSelect.addEventListener('change', () => {
-    const selectedLanguage = languageSelect.value;
-    updateText(selectedLanguage); // Оновлюємо текст на сторінці
-  });
-
-  // Встановлюємо мову за замовчуванням (наприклад, українську)
-  updateText('ua');
